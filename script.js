@@ -1,9 +1,15 @@
 // Menunggu sampai seluruh konten halaman dimuat
 document.addEventListener('DOMContentLoaded', () => {
 
-    // --- EFEK NAVIGASI SAAT SCROLL ---
-    const navbar = document.querySelector('.navbar');
+    // Inisialisasi AOS (Animate On Scroll)
+    AOS.init({
+        duration: 800, // Durasi animasi dalam milidetik
+        once: true, // Animasi hanya berjalan sekali
+    });
 
+    // --- EFEK NAVIGASI SAAT SCROLL ---
+    // ... (kode JavaScript lainnya tetap sama)
+});
     window.addEventListener('scroll', () => {
         if (window.scrollY > 50) {
             // Saat di-scroll ke bawah lebih dari 50px, tambahkan shadow
